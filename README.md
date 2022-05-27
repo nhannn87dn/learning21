@@ -73,6 +73,48 @@ funtion logger(...params){
 }
 logger([1,2,3,4,5,6,7]) // Tham số truyền vào vô hạn
 ```
-**2. Dùng gộp mảng, object**
+Nhưng với trường hợp này nó dùng để gộp
 
+```js
+// Với Object
+var obj1 = {
+   name: 'Node Js'
+};
+var obj2 = {
+  price: 1000
+};
+
+var obj2 = {...obj1,..obj2};
+
+// Kết quả cho ra: {name: 'Node Js', price: 1000
+
+// Với Mảng
+
+var arr1 = ['bmw','ford','huydai'];
+var arr2 = ['toyota','suzuki','charolet'];
+
+var arr3 = [..arr1, ..arr2];
+// Kết quả cho ra: ['bmw','ford','huydai','toyota','suzuki','charolet'];
+```
+
+
+**2. Dùng hack (ghi đè giá trị) mảng, object**
+
+```js
+var configSetting = {
+   endpoint: 'http://domain.com/send-order',
+   apiVersion: 'v1',
+   'others': 'desc'
+};
+
+// TH bạn cần tạo một object khác có cùng thuộc tính trên nhưng muốn `endpoint` có giá trị khác
+
+var configEnd = {
+   ...configSetting,
+   endpoint: 'http://domain.com/query-order'
+ };
+
+// ==> endpoint sẽ được cập nhật giá trị mới bạn có thể check với console.log(configEnd);
+
+```
 
