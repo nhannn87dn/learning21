@@ -61,7 +61,7 @@ console.log(course);
 /* output Object: {name: 'React Js', price:600} */
 ```
 
-##Spread trong ES6
+## Spread trong ES6
 
 **1. Dùng gộp mảng, object**
 
