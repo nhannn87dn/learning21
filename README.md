@@ -1,5 +1,5 @@
-# learning21
- - Học display flex css
+# Một số lưu ý quan trọng
+
 - Chèn biến vào thuộc tính html
 + Đưa số vào Props componet 
 ```js
