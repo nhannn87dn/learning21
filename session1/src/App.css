@@ -51,6 +51,17 @@
 }
 
 
+.socialCard__wraper {
+  display: flex;
+  justify-content: space-around;
+}
+
+@media (min-width: 740px) {
+  .socialCard__wraper, .blockPerson__wraper, .blockChart__wraper   {
+      flex-direction: row;
+      flex-wrap:wrap
+  }
+}
 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {

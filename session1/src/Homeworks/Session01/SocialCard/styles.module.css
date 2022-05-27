@@ -1,25 +1,7 @@
 
-.socialCard__wraper {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-  }
-  
-  .socialCard__wraper>div {
-    flex-basis: 22%;
-    margin: 10px 0;
-  }
-  
-  /* PC, Tablet */
-  @media (min-width: 740px) {
-    .socialCard__wraper {
-        flex-direction: row;
-        flex-wrap:wrap
-    }
-  }
-  
 .socialCard {
     display: flex;
+    flex-basis: 22%;
     padding: 20px;
     box-sizing: border-box;
     color: #fff;

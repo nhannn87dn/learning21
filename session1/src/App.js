@@ -42,23 +42,23 @@ function App() {
   ];
 
   const contact1 = [
-    {id: 1, icon: 'fa-regular fa-envelope', bgColor: '#E54D4C', type: 'Email', content: 'alex@gmail.com'},
+    {id: 1, icon: 'fa-regular fa-envelope', bgColor: '#E54D4C', type: 'Email', content: 'partion@gmail.com'},
     {id: 2, icon: 'fa-regular fa-address-card', bgColor: '#4AC25E', type: 'Phone', content: '+84988777666'},
   
   ];
   const contact2 = [
-    {id: 1, icon: 'fa-regular fa-envelope', bgColor: '#2DB8CD', type: 'Email', content: 'alex@gmail.com'},
-    {id: 2, icon: 'fa-regular fa-address-card', bgColor: '#619CEC', type: 'Phone', content: '+84988777666'},
+    {id: 1, icon: 'fa-regular fa-envelope', bgColor: '#2DB8CD', type: 'Email', content: 'jamesmith@gmail.com'},
+    {id: 2, icon: 'fa-regular fa-address-card', bgColor: '#619CEC', type: 'Phone', content: '+84988333888'},
   
   ];
   const contact3 = [
-    {id: 1, icon: 'fa-regular fa-envelope', bgColor: '#F78153', type: 'Email', content: 'alex@gmail.com'},
-    {id: 2, icon: 'fa-regular fa-address-card', bgColor: '#FCD518', type: 'Phone', content: '+84988777666'},
+    {id: 1, icon: 'fa-regular fa-envelope', bgColor: '#F78153', type: 'Email', content: 'tomhank@gmail.com'},
+    {id: 2, icon: 'fa-regular fa-address-card', bgColor: '#FCD518', type: 'Phone', content: '+84988111000'},
   
   ];
   const contact4 = [
-    {id: 1, icon: 'fa-regular fa-envelope', bgColor: '#CB79E7', type: 'Email', content: 'alex@gmail.com'},
-    {id: 2, icon: 'fa-regular fa-address-card', bgColor: '#FE60E8', type: 'Phone', content: '+84988777666'},
+    {id: 1, icon: 'fa-regular fa-envelope', bgColor: '#CB79E7', type: 'Email', content: 'stalinx@gmail.com'},
+    {id: 2, icon: 'fa-regular fa-address-card', bgColor: '#FE60E8', type: 'Phone', content: '+84988555999'},
   
   ];
 
@@ -93,7 +93,13 @@ function App() {
       <div className="section">
         <div className="section__title">SocialBlock - Component</div>
         <div className="section__body">
-          <SocialBlock />
+          <div className="socialCard__wraper">
+          <SocialBlock iconName="fa-brands fa-facebook" text="Facebook" unit="Likes" color="#619CEC" total={500000} />
+          <SocialBlock iconName="fa-brands fa-twitter" text="Tiwtter" unit="Tweets" color="#31C8DD" total={40000} />
+          <SocialBlock iconName="fa-brands fa-google" text="Google +" unit="Plus " color="#F78153" total={460000} />
+          <SocialBlock iconName="fa-brands fa-pinterest" text="Pintrest" unit="Pins" color="#F75354" total={34000} />
+
+          </div>
           </div>
       </div>
 
@@ -101,10 +107,10 @@ function App() {
         <div className="section__title">ChartColumn - Component</div>
         <div className="section__body">
           <div className="blockChart__wraper">
-            <ChartColumn text="Today Vistor" total={24599} unit='' percentstages={[20, 45, 30, 80, 75]}/>
-            <ChartColumn text="Yesterday Vistor" total={15699} unit='' percentstages={[20, 45, 30, 80, 75]}/>
-            <ChartColumn text="Total Download" total={124599} unit='' percentstages={[20, 45, 30, 80, 75]}/>
-            <ChartColumn text="Current Income" total={54599} unit='' percentstages={[20, 45, 30, 80, 75]}/>
+            <ChartColumn text="Today Vistor" total={24599} unit='' percentstages={[20, 45, 30, 80, 35]}/>
+            <ChartColumn text="Yesterday Vistor" total={15699} unit='' percentstages={[50, 45, 30, 90, 75]}/>
+            <ChartColumn text="Total Download" total={124599} unit='' percentstages={[30, 23, 50, 80, 25]}/>
+            <ChartColumn text="Current Income" total={54599} unit='' percentstages={[88, 45, 20, 60, 65]}/>
           </div>
         </div>
       </div>
