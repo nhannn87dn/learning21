@@ -63,6 +63,7 @@ console.log(course);
 
 ##Spread trong ES6
 **1. Dùng gộp mảng, object**
+
 Như đã biết Rest parameter với dấu ... ở đầu là một khai báo params vô hạn
 
 ```js
@@ -72,3 +73,5 @@ funtion logger(...params){
 logger([1,2,3,4,5,6,7]) // Tham số truyền vào vô hạn
 ```
 **2. Dùng gộp mảng, object**
+
+
