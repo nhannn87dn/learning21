@@ -62,6 +62,7 @@ console.log(course);
 ```
 
 ##Spread trong ES6
+
 **1. Dùng gộp mảng, object**
 
 Như đã biết Rest parameter với dấu ... ở đầu là một khai báo params vô hạn
