@@ -14,3 +14,25 @@ code[<div style={{width: `${width}%`}}>20%</div>]
 const x = 18;
 <Block age={x} />
 ```
+## Enhanced object literals trong ES6
+1. Định nghĩa key: value cho Object
+```js
+var name = 'React Js';
+var price =  600;
+
+var course = {
+   name: name,
+   price:price
+}
+var course = {
+   name,
+   price
+}
+
+console.log(course);
+
+
+```
+2. Định nghĩa Method cho Object
+
+3. Định nghĩa key cho Object dưới dạng biến
