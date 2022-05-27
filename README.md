@@ -15,15 +15,16 @@ const x = 18;
 <Block age={x} />
 ```
 ## Enhanced object literals trong ES6
-1. Định nghĩa key: value cho Object
+**1. Định nghĩa key: value cho Object
 ```js
 var name = 'React Js';
 var price =  600;
-
+/* Cách truyền thống */
 var course = {
    name: name,
    price:price
 }
+/* ES6 */
 var course = {
    name,
    price
@@ -33,6 +34,6 @@ console.log(course);
 
 
 ```
-2. Định nghĩa Method cho Object
+**2. Định nghĩa Method cho Object
 
-3. Định nghĩa key cho Object dưới dạng biến
+**3. Định nghĩa key cho Object dưới dạng biến
