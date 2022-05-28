@@ -1,20 +1,27 @@
-
+/**
+ * Components
+ */
 import ChartBar from './Homeworks/Session01/ChartBar'
 import Skill from './Homeworks/Session01/Skill'
 import SocialBlock from './Homeworks/Session01/SocialCard';
 import ChartColumn from './Homeworks/Session01/ChartColumn';
 import Person from './Homeworks/Session01/Person';
-
+import Category from './Homeworks/Session01/Category';
+import ProductsPromotion from './Homeworks/Session01/ProductsPromotion';
+/**
+ * fontawesome
+ */
 import { library } from '@fortawesome/fontawesome-svg-core'
+import { fas } from '@fortawesome/free-solid-svg-icons'
 import { far } from '@fortawesome/free-regular-svg-icons'
 import { fab } from '@fortawesome/free-brands-svg-icons'
 
 import './App.css';
-
-library.add(far, fab);
+/* Thêm thư viện fontawesome */
+library.add(fas,far, fab);
 
 function App() {
-
+  
   const bios1 = [
     {id: 1, icon: 'fa-regular fa-calendar', text: 'BOD', value: '23/05/2014'},
     {id: 2, icon: 'fa-regular fa-heart', text: 'BG', value: 'B+'},
@@ -119,11 +126,32 @@ function App() {
         <div className="section__title">Person - Component</div>
         <div className="section__body">
           <div className="blockPerson__wraper">
-            <Person avatar='avatars/ayo-ogunseinde-1.jpg' name='Robot Partison' alt='Robot Partison' job='Developing' biosArr= {bios1} contactArr = {contact1} />
-            <Person avatar='avatars/ayo-ogunseinde-2.jpg' name='Jame Smith' alt='Jame Smith' job='Designer' biosArr= {bios2} contactArr = {contact2} />
-            <Person avatar='avatars/ayo-ogunseinde-3.jpg' name='Tom Hanks' alt='Tom Hanks' job='Designer' biosArr= {bios3} contactArr = {contact3} />
-            <Person avatar='avatars/ayo-ogunseinde-4.jpg' name='Silvester Stalin' alt='Silvester Stalin' job='Tesing' biosArr= {bios4} contactArr = {contact4} />
+            <Person avatar='/avatars/ayo-ogunseinde-1.jpg' name='Robot Partison' alt='Robot Partison' job='Developing' biosArr= {bios1} contactArr = {contact1} />
+            <Person avatar='/avatars/ayo-ogunseinde-2.jpg' name='Jame Smith' alt='Jame Smith' job='Designer' biosArr= {bios2} contactArr = {contact2} />
+            <Person avatar='/avatars/ayo-ogunseinde-3.jpg' name='Tom Hanks' alt='Tom Hanks' job='Designer' biosArr= {bios3} contactArr = {contact3} />
+            <Person avatar='/avatars/ayo-ogunseinde-4.jpg' name='Silvester Stalin' alt='Silvester Stalin' job='Tesing' biosArr= {bios4} contactArr = {contact4} />
            
+          </div>
+        </div>
+      </div>
+
+      <div className="section">
+        <div className="section__title">Category - Component</div>
+        <div className="section__body">
+          <div className="blockCategory__wraper">
+            <Category price={25} promo_price={0} attrsArr={["XS", "M", "XXL"]} name='EoDem Modo Typi' thumb='/block-ui-6-images/1.jpg' desc='Lorem ipsum dolor sit amet consectetur adipisicing elit' />
+            <Category price={50} promo_price={0} attrsArr={["S", "M"]} name='Stequitur Mutaionem' thumb='/block-ui-6-images/2.jpg' desc='Lorem ipsum dolor sit amet consectetur adipisicing elit' />
+            <Category price={15} promo_price={0} attrsArr={["L", "XL"]} name='Consuetudim Lectorum' thumb='/block-ui-6-images/3.jpg' desc='Lorem ipsum dolor sit amet consectetur adipisicing elit' />
+            <Category price={75} promo_price={25} attrsArr={["S", "XXL"]} name='Parum Claram' thumb='/block-ui-6-images/4.jpg' desc='Lorem ipsum dolor sit amet consectetur adipisicing elit' />
+          </div>
+        </div>
+      </div>
+
+      <div className="section">
+        <div className="section__title">Promotion Products - Component</div>
+        <div className="section__body">
+          <div className="blockCategory">
+            <ProductsPromotion />
           </div>
         </div>
       </div>

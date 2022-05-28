@@ -1,6 +1,6 @@
 import React from 'react'
-import ColumnBar from './Components/ColumnBar';
-import ChartTotal from './Components/ChartTotal';
+import ColumnBar from './components/ColumnBar';
+import ChartTotal from './components/ChartTotal';
 import styles from './styles.module.css';
 
 export default function ChartColumn({text='',total=0, unit='', percentstages=[50,50,50,50,50]}) {

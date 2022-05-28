@@ -1,9 +1,9 @@
 import React from 'react'
 import styles from './styles.module.css';
-import Avatar from './Components/Avatar';
-import Profile from './Components/Profile';
-import Bio from './Components/Bio';
-import Contact from './Components/Contact';  
+import Avatar from './components/Avatar';
+import Profile from './components/Profile';
+import Bio from './components/Bio';
+import Contact from './components/Contact';  
 
 function Person({
   avatar='',
