@@ -1,5 +1,8 @@
 # Lấy giá trị trong Form
 
+Có thể dùng component [Formik](https://formik.org/docs/overview) để quản lý tiện hơn
+Còn bên dưới là cách thủ công
+
 ```js
 function Form(){
   const = [inputs, setInputs] = React.useState({
