@@ -1,5 +1,6 @@
-#Callback function:
-- Một kỹ thuật truyền vào component CON một prop dạng function có tham số để function thực hiện nhiệm vụ truyền tham số đó ra cho component CHA khi component CON có một sự kiện nhằm thay đổi giá trị một State ở CHA.
+# Callback function
+
+Một kỹ thuật truyền vào component CON một prop dạng function có tham số để function thực hiện nhiệm vụ truyền tham số đó ra cho component CHA khi component CON có một sự kiện nhằm thay đổi giá trị một State ở CHA.
 ```js
 
 export default App(){
