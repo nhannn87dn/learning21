@@ -1,45 +1,4 @@
 # Học ReactJs
 Một số vấn đề cần lưu ý xuyên suốt
-1. Callback function:
-- Một kỹ thuật truyền vào component CON một prop dạng function có tham số để function thực hiện nhiệm vụ truyền tham số đó ra cho component CHA khi component CON có một sự kiện nhằm thay đổi giá trị một State ở CHA.
-```js
-
-export default App(){
-  const [action, setAction] = React.useState('');
-  
-  /* hàm này lắng nghe các sự kiện click từ Button component */
-  const handleControls = (action)=> {
-    switch(action) {
-      case 'save':
-           console.log('saved');
-        break;
-      case 'delete':
-          console.log('deleted');
-        break;
-       default:
-        break;
-    };
-       
-  .....
-  return (
-      <Button onClick={handleControls} />
-  )
-}
-
-function Controls({isPlay,isRepeat, isShuffer, handleControls}) {
-    /* handleControls đóng vai trò là Callback trả lại giá trị cho component CHA */
-    const handleClick = (actionName)=> {
-        if(handleControls && typeof handleControls === 'function'){
-          handleControls(actionName);
-        }
-    };
-  return (
-    <>
-      <button onClick={() => handleClick('save')}>Save</button>
-      <button onClick={() => handleClick('delete')}>Delete</button>
-    </>
-    )
- }
-
-
-```
+1. [Callback Function]https://github.com/nhannn87dn/learning21/blob/master/callback-function.md: truyền ngược biến từ CON ra CHA 
+2. forwardRef: Để thay đổi behavior của một component con, chúng ta phải render lại chúng bằng một tập các props mới. Do vậy, cần một cách để thay đổi hành vi của một thằng con mà không cần phải tìm state hoặc re-render lại component đó.
