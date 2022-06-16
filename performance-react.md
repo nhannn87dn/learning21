@@ -21,7 +21,7 @@ export default function App(){
   ...
   
   const increaseAge = React.useCallback(()=> {
-    setAge(prev == prev+1);
+    setAge(prev => prev+1);
   }, [age]); //depn
   
 }
