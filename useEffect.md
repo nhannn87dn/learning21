@@ -27,3 +27,18 @@ useEffect(() => {
 => Lưu ý: Luôn đúng cho cả 3 cách dùng trên
 - Callback luôn được gọi sau khi component đã mounted
 - Cleanup luôn được gọi trước khi component unmounted
+
+## Effect Cleanup (Unmouting)
+- Sử dụng để hủy effects --> chống tràn bộ nhớ (memory leaks)
+- Khi nào dùng: Khi dùng Timeouts, subscriptions, event listeners hoặc các effects khác không cần thiết sử dụng đến nũa.
+```js
+useEffect(() => {
+    let timer = setTimeout(() => {
+    setCount((count) => count + 1);
+  }, 1000);
+  
+  // Có return trả về --> Unmouting
+  
+  return () => clearTimeout(timer)
+  }, []);
+```
