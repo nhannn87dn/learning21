@@ -1,6 +1,7 @@
 # Optimizing Performance
 
-- `React Memo` nó **Cache cả một class component và function component** -> bỏ qua việc **rendering** khi component đó ko có biến nào thay đổi, và ko sử dụng State.
+## React Memo
+- nó **Cache cả một class component và function component** -> bỏ qua việc **rendering** khi component đó ko có biến nào thay đổi, và ko sử dụng State.
 - **Khi nào dùng**: Khi mà component này độc lập hoàn toàn với component chứa nó (CHA), tức là khi CHA cần re-render nhưng CON ko cần thiết phải re-render thì dùng. Tùy từng ngữ cảnh cụ thể.
 ```js
 function SayHello({name}){
@@ -30,8 +31,9 @@ function App(){
 }
 export default App
 ```
-
+## useCallback
 - `useCallback` dùng cache **một function** có sử dụng State, nó chỉ phụ thuộc vào dependency.
+- Dùng khi nào: khi component CON cần truyền một sự kiện callback ra cho CHA
 
 ```js
 
