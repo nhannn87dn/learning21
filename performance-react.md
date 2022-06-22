@@ -68,6 +68,7 @@ function SayHello({name,onIncease}){
 export default React.memo(SayHello)
 
 ```
+## useMemo
 - `useMemo` sinh ra với mục địch tránh việc rerender nhiều lần thì useMemo tránh cho việc tính toán lại một function lặp đi lặp lại nhiều lần mỗi lần component re-render. Bản chất useMemo là caching lại giá trị return của function, mỗi lần component rerender nó sẽ kiểm tra giá trị tham số truyền vào function nếu giá trị đó không thay đổi, thì return value đã caching trong memory. Ngược lại nếu giá trị tham số truyền vào thay đổi, nó sẽ thực hiện tính toán lại vào trả về value, sao đó caching lại value cho những lần rerender tiếp theo.
 
 ```js
