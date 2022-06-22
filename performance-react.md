@@ -28,7 +28,7 @@ function App(){
   )
 
 }
-export default React.memo(SayHello)
+export default App
 ```
 
 - `useCallback` dùng cache **một function** có sử dụng State, nó chỉ phụ thuộc vào dependency.
