@@ -82,14 +82,17 @@ function App() {
   
   const words = ["hey", "this", "is", "cool"];
   const word = words[wordIndex];
-
-  const computeLetterCount = word => {
-    let i = 0;
-    while (i < 1000000000) i++;
-    return word.length;
-  };
-
-const letterCount = useMemo(() => computeLetterCount(word), [word]);
+  
+ // Khi tăng biến count --> App re-render lại nó sẽ chạy qua hàm này, trong khi chưa cần dùng đến nó
+ // useMemo trả về kết quả và cache nó khi chưa dùng đến
+const letterCount = useMemo(() => {
+      const computeLetterCount = word => {
+        let i = 0;
+        while (i < 1000000000) i++;
+        return word.length;
+      };
+      return computeLetterCount(word);
+  }, [word]);
 
   return (
     <div style={{ padding: "15px" }}>
