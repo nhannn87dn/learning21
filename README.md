@@ -5,3 +5,9 @@ Một số vấn đề cần lưu ý xuyên suốt
 
 codepush -- react navtive, 
 sentry
+
+3. Thay thế css class thường thành Module css
+Ctrl +H
+Kiểu regex
+Find: (.*)className="(.*)"(.*)
+Replace: $1className={styles.$2}$3
